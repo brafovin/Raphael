@@ -11,7 +11,7 @@ export default function Footer() {
               RAPHAEL
             </Link>
             <p className="mt-3 text-sm text-zinc-500 leading-relaxed">
-              Premium Print-on-Demand für Gaming, Fitness & Lifestyle. Jedes Produkt wird erst nach deiner Bestellung gefertigt.
+              Fitness-Streetwear in limitierten Drops. Jedes Stück wird erst nach deiner Bestellung produziert – kein Overstock, maximale Qualität.
             </p>
             <div className="flex gap-3 mt-4">
               {["instagram", "tiktok", "twitter"].map((social) => (
@@ -33,10 +33,9 @@ export default function Footer() {
             <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">Shop</h3>
             <ul className="space-y-2">
               {[
-                { href: "/shop", label: "Alle Produkte" },
-                { href: "/shop?kategorie=gaming", label: "Gaming" },
-                { href: "/shop?kategorie=fitness", label: "Fitness" },
-                { href: "/shop?kategorie=poster", label: "Poster" },
+                { href: "/shop", label: "Alle Drops" },
+                { href: "/shop?drop=drop1", label: "Drop 01" },
+                { href: "/shop?drop=drop2", label: "Drop 02 – NEU" },
               ].map((item) => (
                 <li key={item.href}>
                   <Link href={item.href} className="text-zinc-500 hover:text-neon text-sm transition-colors">
