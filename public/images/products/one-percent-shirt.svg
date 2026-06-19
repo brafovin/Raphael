@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000a1a"/>
+      <stop offset="100%" stop-color="#001433"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+  <line x1="300" y1="0" x2="300" y2="600" stroke="white" stroke-opacity="0.03"/>
+  <line x1="0" y1="300" x2="600" y2="300" stroke="white" stroke-opacity="0.03"/>
+  <!-- T-shirt slim fit -->
+  <path d="M 242,120 L 108,175 L 126,248 L 218,218 L 218,495 L 382,495 L 382,218 L 474,248 L 492,175 L 358,120 Q 340,113 330,104 Q 315,88 300,86 Q 285,88 270,104 Q 260,113 242,120 Z"
+        fill="rgba(255,255,255,0.09)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+  <!-- Graph line (going up) -->
+  <polyline points="238,372 260,358 282,342 304,318 326,295 348,270 370,248"
+            fill="none" stroke="#00ff87" stroke-width="2" opacity="0.5"/>
+  <!-- Arrow head -->
+  <polygon points="370,248 358,258 365,268" fill="#00ff87" opacity="0.5"/>
+  <!-- Main text - minimal design -->
+  <text x="300" y="418" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="900" font-size="62" fill="#00ff87" filter="url(#glow)">1%</text>
+  <text x="300" y="448" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="400" font-size="16" fill="rgba(255,255,255,0.55)" letter-spacing="5">BETTER</text>
+  <text x="300" y="468" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="rgba(255,255,255,0.25)" letter-spacing="3">EVERY SINGLE DAY</text>
+  <!-- Brand tag -->
+  <text x="300" y="538" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="700" font-size="11" fill="rgba(255,255,255,0.22)" letter-spacing="5">RAPHAEL · DROP 02</text>
+</svg>

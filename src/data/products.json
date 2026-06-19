@@ -10,6 +10,7 @@
     "sizes": ["S", "M", "L", "XL", "XXL"],
     "gradientFrom": "#0d0d0d",
     "gradientTo": "#1c1c1c",
+    "image": "/images/products/no-pain-no-gain-hoodie.svg",
     "emoji": "💪",
     "badge": "Drop 01"
   },
@@ -24,6 +25,7 @@
     "sizes": ["S", "M", "L", "XL", "XXL"],
     "gradientFrom": "#1a0000",
     "gradientTo": "#2d0505",
+    "image": "/images/products/beast-mode-hoodie.svg",
     "emoji": "🦁",
     "badge": "Bestseller"
   },
@@ -38,6 +40,7 @@
     "sizes": ["S", "M", "L", "XL", "XXL"],
     "gradientFrom": "#0a1a0a",
     "gradientTo": "#122012",
+    "image": "/images/products/rise-grind-shirt.svg",
     "emoji": "🌅",
     "badge": "Drop 01"
   },
@@ -52,6 +55,7 @@
     "sizes": ["S", "M", "L", "XL", "XXL"],
     "gradientFrom": "#0a0a0a",
     "gradientTo": "#1a1a00",
+    "image": "/images/products/grind-never-stops-tee.svg",
     "emoji": "⚡",
     "badge": null
   },
@@ -66,6 +70,7 @@
     "sizes": ["S", "M", "L", "XL", "XXL"],
     "gradientFrom": "#001a0a",
     "gradientTo": "#003316",
+    "image": "/images/products/pre-workout-crewneck.svg",
     "emoji": "🔥",
     "badge": "Drop 02"
   },
@@ -80,6 +85,7 @@
     "sizes": ["S", "M", "L", "XL", "XXL"],
     "gradientFrom": "#000a1a",
     "gradientTo": "#001433",
+    "image": "/images/products/one-percent-shirt.svg",
     "emoji": "📈",
     "badge": "Drop 02"
   },
@@ -94,6 +100,7 @@
     "sizes": ["S", "M", "L", "XL", "XXL"],
     "gradientFrom": "#1a000d",
     "gradientTo": "#2d0017",
+    "image": "/images/products/train-insane-hoodie.svg",
     "emoji": "🏋️",
     "badge": "Drop 02"
   },
@@ -108,6 +115,7 @@
     "sizes": ["One Size"],
     "gradientFrom": "#0a0a1a",
     "gradientTo": "#141428",
+    "image": "/images/products/raphael-gym-bag.svg",
     "emoji": "🎒",
     "badge": "Drop 03 – NEU"
   },
@@ -122,6 +130,7 @@
     "sizes": ["500 ml", "750 ml", "1000 ml"],
     "gradientFrom": "#001520",
     "gradientTo": "#002535",
+    "image": "/images/products/steel-bottle-1000ml.svg",
     "emoji": "💧",
     "badge": "Drop 03 – NEU"
   },
@@ -136,6 +145,7 @@
     "sizes": ["Komplett-Set (5 Bänder)", "Light Set (5–20 kg)", "Heavy Set (20–40 kg)"],
     "gradientFrom": "#1a0f00",
     "gradientTo": "#2d1a00",
+    "image": "/images/products/widerstandsbaender-set.svg",
     "emoji": "🏅",
     "badge": "Drop 03 – NEU"
   },
@@ -150,6 +160,7 @@
     "sizes": ["60×120 cm", "70×140 cm"],
     "gradientFrom": "#00101a",
     "gradientTo": "#001a28",
+    "image": "/images/products/beast-gym-towel.svg",
     "emoji": "🧴",
     "badge": "Drop 03 – NEU"
   },
@@ -164,6 +175,7 @@
     "sizes": ["One Size (verstellbar)"],
     "gradientFrom": "#0a1500",
     "gradientTo": "#142200",
+    "image": "/images/products/pro-jump-rope.svg",
     "emoji": "🪢",
     "badge": "Drop 03 – NEU"
   }

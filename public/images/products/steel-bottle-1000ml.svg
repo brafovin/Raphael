@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#001520"/>
+      <stop offset="100%" stop-color="#002535"/>
+    </linearGradient>
+    <linearGradient id="bottle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a2a35"/>
+      <stop offset="40%" stop-color="#2a3f50"/>
+      <stop offset="70%" stop-color="#1e3040"/>
+      <stop offset="100%" stop-color="#102030"/>
+    </linearGradient>
+    <linearGradient id="cap" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#003322"/>
+      <stop offset="50%" stop-color="#00ff87" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#002518"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+  <line x1="300" y1="0" x2="300" y2="600" stroke="white" stroke-opacity="0.03"/>
+  <line x1="0" y1="300" x2="600" y2="300" stroke="white" stroke-opacity="0.03"/>
+  <!-- Bottle body -->
+  <rect x="228" y="168" width="144" height="360" rx="28" fill="url(#bottle)" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+  <!-- Cap -->
+  <rect x="240" y="130" width="120" height="48" rx="12" fill="url(#cap)" stroke="rgba(0,255,135,0.3)" stroke-width="1.5"/>
+  <!-- Cap loop/handle -->
+  <path d="M 268,130 Q 268,105 300,105 Q 332,105 332,130" fill="none" stroke="rgba(0,255,135,0.4)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Shoulder taper -->
+  <rect x="228" y="168" width="144" height="20" rx="8" fill="rgba(255,255,255,0.04)"/>
+  <!-- Reflective highlight -->
+  <rect x="248" y="195" width="22" height="280" rx="11" fill="rgba(255,255,255,0.06)"/>
+  <!-- Measurement lines -->
+  <line x1="228" y1="285" x2="248" y2="285" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <line x1="228" y1="345" x2="248" y2="345" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <line x1="228" y1="405" x2="238" y2="405" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <!-- Brand text on bottle -->
+  <text x="300" y="300" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="900" font-size="20" fill="#00ff87" letter-spacing="2" filter="url(#glow)" transform="rotate(-90,300,300)">RAPHAEL</text>
+  <!-- Capacity -->
+  <text x="370" y="348" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="700" font-size="13" fill="rgba(0,255,135,0.5)" letter-spacing="1">1000</text>
+  <text x="370" y="364" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="rgba(255,255,255,0.3)" letter-spacing="1">ML</text>
+  <!-- Bottom base -->
+  <ellipse cx="300" cy="528" rx="72" ry="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <!-- Brand tag -->
+  <text x="300" y="572" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="700" font-size="11" fill="rgba(255,255,255,0.22)" letter-spacing="5">RAPHAEL · DROP 03</text>
+</svg>

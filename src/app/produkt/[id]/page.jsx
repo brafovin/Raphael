@@ -57,24 +57,21 @@ export default function ProductDetailPage() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
         {/* Image */}
         <div
-          className="rounded-3xl overflow-hidden aspect-square flex items-center justify-center relative border border-dark-border"
+          className="rounded-3xl overflow-hidden aspect-square relative border border-dark-border"
           style={{
             background: `linear-gradient(135deg, ${product.gradientFrom} 0%, ${product.gradientTo} 100%)`,
           }}
         >
           {product.badge && (
-            <span className="absolute top-5 left-5 px-3 py-1 text-sm font-bold rounded-full bg-neon text-black">
+            <span className="absolute top-5 left-5 z-10 px-3 py-1 text-sm font-bold rounded-full bg-neon text-black">
               {product.badge}
             </span>
           )}
-          <div className="flex flex-col items-center gap-4 text-center">
-            <span className="text-[120px] sm:text-[160px]" role="img" aria-label={product.name}>
-              {product.emoji}
-            </span>
-            <span className="text-sm font-semibold tracking-widest uppercase text-zinc-500">
-              {product.categoryLabel}
-            </span>
-          </div>
+          <img
+            src={product.image}
+            alt={product.name}
+            className="w-full h-full object-cover"
+          />
         </div>
 
         {/* Details */}
@@ -222,10 +219,10 @@ export default function ProductDetailPage() {
               <Link key={p.id} href={`/produkt/${p.id}`}>
                 <div className="bg-dark-card border border-dark-border rounded-2xl overflow-hidden hover:border-neon/40 transition-all duration-300 group">
                   <div
-                    className="aspect-square flex items-center justify-center"
+                    className="aspect-square overflow-hidden"
                     style={{ background: `linear-gradient(135deg, ${p.gradientFrom} 0%, ${p.gradientTo} 100%)` }}
                   >
-                    <span className="text-6xl">{p.emoji}</span>
+                    <img src={p.image} alt={p.name} loading="lazy" className="w-full h-full object-cover" />
                   </div>
                   <div className="p-4">
                     <p className="text-xs text-zinc-500 mb-1">{p.categoryLabel}</p>

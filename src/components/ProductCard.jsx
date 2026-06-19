@@ -18,7 +18,7 @@ export default function ProductCard({ product }) {
   return (
     <Link href={`/produkt/${product.id}`} className="group block">
       <div className="bg-dark-card border border-dark-border rounded-2xl overflow-hidden hover:border-neon/40 transition-all duration-300 hover:shadow-lg hover:shadow-neon/5">
-        {/* Product Image Placeholder */}
+        {/* Product Image */}
         <div
           className="relative aspect-square overflow-hidden"
           style={{
@@ -30,15 +30,13 @@ export default function ProductCard({ product }) {
               {product.badge}
             </span>
           )}
-          <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
-            <span className="text-7xl sm:text-8xl" role="img" aria-label={product.name}>
-              {product.emoji}
-            </span>
-            <span className="text-xs font-semibold tracking-widest uppercase text-zinc-500">
-              {product.categoryLabel}
-            </span>
-          </div>
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300" />
+
+          <img
+            src={product.image}
+            alt={product.name}
+            loading="lazy"
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
 
         {/* Info */}

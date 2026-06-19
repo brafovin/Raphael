@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0000"/>
+      <stop offset="100%" stop-color="#2d0505"/>
+    </linearGradient>
+    <linearGradient id="fabric" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+  <line x1="300" y1="0" x2="300" y2="600" stroke="white" stroke-opacity="0.03"/>
+  <line x1="0" y1="300" x2="600" y2="300" stroke="white" stroke-opacity="0.03"/>
+  <!-- Oversized hoodie silhouette (wider) -->
+  <path d="M 228,158 L 88,215 L 110,292 L 208,260 L 208,515 L 392,515 L 392,260 L 490,292 L 512,215 L 372,158 L 358,128 Q 332,68 300,64 Q 268,68 242,128 Z"
+        fill="url(#fabric)" stroke="rgba(255,255,255,0.10)" stroke-width="1.5"/>
+  <!-- Hood -->
+  <path d="M 242,128 Q 262,88 300,84 Q 338,88 358,128 Q 332,116 300,114 Q 268,116 242,128 Z"
+        fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+  <!-- Pocket -->
+  <rect x="240" y="375" width="120" height="76" rx="4" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+  <!-- Drawstrings -->
+  <line x1="282" y1="148" x2="274" y2="218" stroke="rgba(255,255,255,0.13)" stroke-width="2"/>
+  <line x1="318" y1="148" x2="326" y2="218" stroke="rgba(255,255,255,0.13)" stroke-width="2"/>
+  <!-- Lion graphic circle -->
+  <circle cx="300" cy="285" r="62" fill="none" stroke="#00ff87" stroke-width="1.5" stroke-opacity="0.4"/>
+  <text x="300" y="278" text-anchor="middle" font-family="system-ui,sans-serif" font-size="44" fill="rgba(255,255,255,0.6)">🦁</text>
+  <text x="300" y="320" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="900" font-size="20" fill="#00ff87" letter-spacing="3" filter="url(#glow)">BEAST MODE</text>
+  <!-- Brand tag -->
+  <text x="300" y="558" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="700" font-size="11" fill="rgba(255,255,255,0.22)" letter-spacing="5">RAPHAEL · DROP 01</text>
+</svg>

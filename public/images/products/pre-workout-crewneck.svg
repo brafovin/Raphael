@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#001a0a"/>
+      <stop offset="100%" stop-color="#003316"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+  <line x1="300" y1="0" x2="300" y2="600" stroke="white" stroke-opacity="0.03"/>
+  <line x1="0" y1="300" x2="600" y2="300" stroke="white" stroke-opacity="0.03"/>
+  <!-- Crewneck silhouette (wider neck, no hood) -->
+  <path d="M 235,130 L 100,182 L 118,258 L 212,228 L 212,500 L 388,500 L 388,228 L 482,258 L 500,182 L 365,130 Q 345,123 335,116 Q 315,105 300,104 Q 285,105 265,116 Q 255,123 235,130 Z"
+        fill="rgba(255,255,255,0.09)" stroke="rgba(255,255,255,0.13)" stroke-width="1.5"/>
+  <!-- Wide crew neck detail -->
+  <path d="M 265,116 Q 282,110 300,109 Q 318,110 335,116 Q 318,128 300,130 Q 282,128 265,116 Z"
+        fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <!-- Ribbed cuff indicators -->
+  <line x1="212" y1="480" x2="388" y2="480" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <line x1="212" y1="492" x2="388" y2="492" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <!-- Large bold text design -->
+  <text x="300" y="290" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="900" font-size="48" fill="#00ff87" letter-spacing="-1" filter="url(#glow)">PRE</text>
+  <line x1="220" y1="305" x2="380" y2="305" stroke="#00ff87" stroke-width="1.5" opacity="0.4"/>
+  <text x="300" y="352" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="900" font-size="48" fill="#00ff87" letter-spacing="-1" filter="url(#glow)">WORKOUT</text>
+  <text x="300" y="390" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="rgba(255,255,255,0.3)" letter-spacing="5">FRENCH TERRY</text>
+  <!-- Brand tag -->
+  <text x="300" y="540" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="700" font-size="11" fill="rgba(255,255,255,0.22)" letter-spacing="5">RAPHAEL · DROP 02</text>
+</svg>

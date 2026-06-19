@@ -305,12 +305,12 @@ export default function KassePage() {
               {items.map((item) => (
                 <div key={item.key} className="flex items-center gap-3">
                   <div
-                    className="w-10 h-10 rounded-lg shrink-0 flex items-center justify-center"
+                    className="w-10 h-10 rounded-lg shrink-0 overflow-hidden"
                     style={{
                       background: `linear-gradient(135deg, ${item.product.gradientFrom}, ${item.product.gradientTo})`,
                     }}
                   >
-                    <span className="text-base">{item.product.emoji}</span>
+                    <img src={item.product.image} alt={item.product.name} className="w-full h-full object-cover" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-white text-xs font-medium truncate">{item.product.name}</p>

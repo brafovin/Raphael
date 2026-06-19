@@ -52,12 +52,17 @@ export default function WarenkorbPage() {
             >
               {/* Thumbnail */}
               <div
-                className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl shrink-0 flex items-center justify-center"
+                className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl shrink-0 overflow-hidden"
                 style={{
                   background: `linear-gradient(135deg, ${item.product.gradientFrom} 0%, ${item.product.gradientTo} 100%)`,
                 }}
               >
-                <span className="text-3xl">{item.product.emoji}</span>
+                <img
+                  src={item.product.image}
+                  alt={item.product.name}
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Info */}
