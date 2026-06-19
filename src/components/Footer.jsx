@@ -34,8 +34,9 @@ export default function Footer() {
             <ul className="space-y-2">
               {[
                 { href: "/shop", label: "Alle Drops" },
-                { href: "/shop?drop=drop1", label: "Drop 01" },
-                { href: "/shop?drop=drop2", label: "Drop 02 – NEU" },
+                { href: "/shop?drop=drop1", label: "Drop 01 – Kleidung" },
+                { href: "/shop?drop=drop2", label: "Drop 02 – Kleidung" },
+                { href: "/shop?drop=drop3", label: "Drop 03 – Gear 🏋️" },
               ].map((item) => (
                 <li key={item.href}>
                   <Link href={item.href} className="text-zinc-500 hover:text-neon text-sm transition-colors">

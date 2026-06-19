@@ -9,6 +9,7 @@ const FILTERS = [
   { id: "alle", label: "Alle Drops" },
   { id: "drop1", label: "Drop 01" },
   { id: "drop2", label: "Drop 02" },
+  { id: "drop3", label: "Drop 03 – Gear 🏋️" },
 ];
 
 export default function ShopContent() {
@@ -38,7 +39,7 @@ export default function ShopContent() {
         <p className="text-neon text-sm font-semibold tracking-widest uppercase mb-1">Fitness Drops</p>
         <h1 className="text-4xl font-black tracking-tight text-white">Shop</h1>
         <p className="text-zinc-500 mt-2">
-          {filtered.length} Produkt{filtered.length !== 1 ? "e" : ""} · {products.filter(p => p.category === "drop2").length} neue Pieces in Drop 02
+          {filtered.length} Produkt{filtered.length !== 1 ? "e" : ""} · Drop 03 mit Fitness-Gear jetzt verfügbar
         </p>
       </div>
 

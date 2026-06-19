@@ -67,7 +67,7 @@
     "gradientFrom": "#001a0a",
     "gradientTo": "#003316",
     "emoji": "🔥",
-    "badge": "Drop 02 – NEU"
+    "badge": "Drop 02"
   },
   {
     "id": "one-percent-shirt",
@@ -81,7 +81,7 @@
     "gradientFrom": "#000a1a",
     "gradientTo": "#001433",
     "emoji": "📈",
-    "badge": "Drop 02 – NEU"
+    "badge": "Drop 02"
   },
   {
     "id": "train-insane-hoodie",
@@ -95,6 +95,76 @@
     "gradientFrom": "#1a000d",
     "gradientTo": "#2d0017",
     "emoji": "🏋️",
-    "badge": "Drop 02 – NEU"
+    "badge": "Drop 02"
+  },
+  {
+    "id": "raphael-gym-bag",
+    "name": "Raphael Gym Bag",
+    "price": 44.99,
+    "category": "drop3",
+    "categoryLabel": "Drop 03 – Gear",
+    "description": "Deine Ausrüstung verdient eine Tasche, die genauso hart ist wie du. Die Raphael Gym Bag fasst alles – Kleidung, Schuhe, Shaker, Handtuch – und sieht dabei verdammt gut aus. Strapazierfähiges Gewebe, breiter Schultergurt, separate Schuhfach-Abteilung.",
+    "features": ["Strapazierfähiges 600D-Polyester", "Volumen: 40 Liter", "Separates Schuhfach", "Reißverschluss-Innentasche", "Verstellbarer Schultergurt"],
+    "sizes": ["One Size"],
+    "gradientFrom": "#0a0a1a",
+    "gradientTo": "#141428",
+    "emoji": "🎒",
+    "badge": "Drop 03 – NEU"
+  },
+  {
+    "id": "steel-bottle-1000ml",
+    "name": "Beast Steel Bottle",
+    "price": 34.99,
+    "category": "drop3",
+    "categoryLabel": "Drop 03 – Gear",
+    "description": "Kein Workout ohne Hydration. Die Beast Steel Bottle aus hochwertigem doppelwandigem Edelstahl hält Getränke 24h kalt und 12h warm. Mit dem markanten Raphael-Drop-Print – damit auch im Gym jeder weiß, wo du hingehörst.",
+    "features": ["Doppelwandiger Edelstahl 18/8", "BPA-frei", "Hält 24h kalt / 12h warm", "Auslaufsicherer Deckel", "Spülmaschinenfest"],
+    "sizes": ["500 ml", "750 ml", "1000 ml"],
+    "gradientFrom": "#001520",
+    "gradientTo": "#002535",
+    "emoji": "💧",
+    "badge": "Drop 03 – NEU"
+  },
+  {
+    "id": "widerstandsbaender-set",
+    "name": "Resistance Band Set",
+    "price": 29.99,
+    "category": "drop3",
+    "categoryLabel": "Drop 03 – Gear",
+    "description": "Fünf Bänder, endlose Möglichkeiten. Das Raphael Resistance Band Set deckt jeden Widerstandsgrad ab – von Warm-up bis Heavy Pull. Aus hochwertigem Naturlatex, mit Anti-Rutsch-Oberfläche und Aufbewahrungstasche. Home-Gym oder Studio – du brauchst kein Equipment mehr.",
+    "features": ["5 Bänder: 5/10/20/30/40 kg", "100% Naturlatex", "Anti-Rutsch-Oberfläche", "Inkl. Aufbewahrungstasche", "Trainingsanleitung beiliegend"],
+    "sizes": ["Komplett-Set (5 Bänder)", "Light Set (5–20 kg)", "Heavy Set (20–40 kg)"],
+    "gradientFrom": "#1a0f00",
+    "gradientTo": "#2d1a00",
+    "emoji": "🏅",
+    "badge": "Drop 03 – NEU"
+  },
+  {
+    "id": "beast-gym-towel",
+    "name": "Beast Gym Towel",
+    "price": 24.99,
+    "category": "drop3",
+    "categoryLabel": "Drop 03 – Gear",
+    "description": "Schwitze wie ein Beast – trockne wie ein Champion. Das Beast Gym Towel aus ultra-saugfähigem Mikrofaser-Material trocknet dich schneller als normale Handtücher und nimmt dabei kaum Platz in der Tasche ein. Mit dem Raphael-Drop-03-Print auf der Vorderseite.",
+    "features": ["100% Mikrofaser", "Ultra-saugfähig & schnelltrocknend", "Antistatisch & geruchshemmend", "Kompakt zusammenfaltbar", "Maschinenwäsche bei 40°C"],
+    "sizes": ["60×120 cm", "70×140 cm"],
+    "gradientFrom": "#00101a",
+    "gradientTo": "#001a28",
+    "emoji": "🧴",
+    "badge": "Drop 03 – NEU"
+  },
+  {
+    "id": "pro-jump-rope",
+    "name": "Pro Speed Rope",
+    "price": 24.99,
+    "category": "drop3",
+    "categoryLabel": "Drop 03 – Gear",
+    "description": "Cardio-King ohne Maschine. Das Pro Speed Rope mit Kugellager-Mechanismus ermöglicht blitzschnelle Rotationen – perfekt für Double-Unders und intensive HIIT-Sessions. Verstellbares Edelstahlseil, ergonomische Aluminium-Griffe mit Raphael-Gravur.",
+    "features": ["Kugellager für maximale Rotation", "Verstellbares Edelstahlseil", "Ergonomische Aluminium-Griffe", "Für alle Körpergrößen geeignet", "Inkl. Transportbeutel"],
+    "sizes": ["One Size (verstellbar)"],
+    "gradientFrom": "#0a1500",
+    "gradientTo": "#142200",
+    "emoji": "🪢",
+    "badge": "Drop 03 – NEU"
   }
 ]

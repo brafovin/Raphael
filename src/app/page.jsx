@@ -10,6 +10,7 @@ export const metadata = {
 export default function HomePage() {
   const drop1 = products.filter((p) => p.category === "drop1");
   const drop2 = products.filter((p) => p.category === "drop2");
+  const drop3 = products.filter((p) => p.category === "drop3");
 
   return (
     <div>
@@ -23,7 +24,7 @@ export default function HomePage() {
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
           <div className="inline-flex items-center gap-2 bg-neon/10 border border-neon/20 rounded-full px-4 py-1.5 text-neon text-sm font-medium mb-8">
             <span className="w-1.5 h-1.5 bg-neon rounded-full animate-pulse" />
-            Drop 02 ist jetzt live 🔥
+            Drop 03 – Gear & Equipment jetzt live 🏋️
           </div>
 
           <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black tracking-tighter leading-none mb-6">
@@ -39,19 +40,19 @@ export default function HomePage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/shop"
+              href="/shop?drop=drop3"
               className="inline-flex items-center justify-center gap-2 bg-neon hover:bg-neon-dark text-black font-bold px-8 py-4 rounded-xl text-lg transition-all duration-200 hover:scale-105 active:scale-95"
             >
-              Drop 02 ansehen
+              Drop 03 ansehen
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
               </svg>
             </Link>
             <Link
-              href="/shop?drop=drop1"
+              href="/shop"
               className="inline-flex items-center justify-center gap-2 bg-transparent hover:bg-dark-hover border border-dark-border hover:border-zinc-600 text-white font-semibold px-8 py-4 rounded-xl text-lg transition-all duration-200"
             >
-              Drop 01 entdecken
+              Alle Drops ansehen
             </Link>
           </div>
 
@@ -81,7 +82,7 @@ export default function HomePage() {
         <TrustBadges />
       </section>
 
-      {/* ── Drop 02 – NEU ── */}
+      {/* ── Drop 03 – Gear ── */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex items-center justify-between mb-8">
           <div>
@@ -89,7 +90,42 @@ export default function HomePage() {
               <span className="w-1.5 h-1.5 bg-neon rounded-full animate-pulse" />
               JETZT LIVE
             </div>
+            <h2 className="text-3xl font-black tracking-tight text-white">Drop 03 – Gear</h2>
+            <p className="text-zinc-500 text-sm mt-1">Fitness-Equipment & Zubehör</p>
+          </div>
+          <Link
+            href="/shop?drop=drop3"
+            className="text-zinc-400 hover:text-neon text-sm font-medium flex items-center gap-1 transition-colors"
+          >
+            Alle ansehen
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {drop3.slice(0, 4).map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
+        {drop3.length > 4 && (
+          <div className="text-center mt-8">
+            <Link
+              href="/shop?drop=drop3"
+              className="inline-flex items-center gap-2 border border-dark-border hover:border-neon/40 text-zinc-400 hover:text-neon font-medium px-6 py-3 rounded-xl transition-all duration-200"
+            >
+              Alle {drop3.length} Gear-Produkte ansehen
+            </Link>
+          </div>
+        )}
+      </section>
+
+      {/* ── Drop 02 ── */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="flex items-center justify-between mb-8">
+          <div>
             <h2 className="text-3xl font-black tracking-tight text-white">Drop 02</h2>
+            <p className="text-zinc-500 text-sm mt-1">Fitness Streetwear – Kollektion 2</p>
           </div>
           <Link
             href="/shop?drop=drop2"
